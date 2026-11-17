@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Donate &amp; Payments | Midwest Sharks Baseball</title>
-<meta name="description" content="Donate to Sharks Nation Incorporated, a 501(c)(3) youth baseball nonprofit in St. Louis, or make a team payment.">
-<link rel="canonical" href="https://sharksnationbaseball.com/donate/">
+<title>Payments | Midwest Sharks Baseball</title>
+<meta name="description" content="Pay Midwest Sharks team fees, tournament costs, and fundraiser tickets by card, Apple Pay, PayPal, Venmo, Cash App, or Zelle.">
+<link rel="icon" href="/assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--deep);color:#fff}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:900 1.5rem/1 var(--display)}
-.brand svg{width:34px;height:34px}
+.brand img{width:44px;height:44px;display:block}
 nav ul{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
 nav a{text-decoration:none;font-weight:600;font-size:.95rem;opacity:.85}
 nav a:hover,nav a[aria-current]{opacity:1}
@@ -88,7 +88,7 @@ button.btn-primary{background:var(--jersey)}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Midwest Sharks home">
-      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#2E86DE"/><path d="M8 28 C16 26 20 18 22 8 C26 16 30 22 33 28 Z" fill="#fff"/></svg>
+      <img src="data:image/webp;base64,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" alt="" width="44" height="44">
       Midwest Sharks
     </a>
     <nav aria-label="Main">
@@ -97,7 +97,8 @@ button.btn-primary{background:var(--jersey)}
         <li><a href="/#teams">Teams</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/#join">Join</a></li>
-        <li><a href="/donate/" aria-current="page">Donate &amp; Pay</a></li>
+        <li><a href="/donate/">Donate</a></li>
+        <li><a href="/payments/" aria-current="page">Payments</a></li>
         <li><a href="/#contact">Contact</a></li>
       </ul>
     </nav>
@@ -107,34 +108,16 @@ button.btn-primary{background:var(--jersey)}
 <main>
   <div class="page-head">
     <div class="wrap">
-      <h1>Donate &amp; Pay</h1>
-      <p>Support Sharks Nation with a tax-deductible gift, or take care of a team payment. Every dollar helps keep competitive baseball affordable for St. Louis families.</p>
-      <div class="jump">
-        <a href="#donate">Make a donation</a>
-        <a href="#payments">Make a payment</a>
-      </div>
+      <h1>Payments</h1>
+      <p>Pay team fees, tournament costs, and fundraiser tickets by card, Apple Pay, PayPal, Venmo, Cash App, or Zelle.</p>
     </div>
   </div>
 
-  <section class="block" id="donate">
-    <div class="wrap split">
-      <div>
-        <h2>Make a donation</h2>
-        <p class="lead">Every donation goes directly toward cutting costs for our athletes, parents, and coaches. We keep our fees well below the big clubs so every kid has the opportunity to play competitive baseball.</p>
-        <p class="fine">Sharks Nation Incorporated is a 501(c)(3) nonprofit as classified by the IRS, so your donation may be tax-deductible to the extent allowed by law. For gifts over $1,000, please email <a href="mailto:Info@SharksNationBaseball.com">Info@SharksNationBaseball.com</a>.</p>
-      </div>
-      <div class="give">
-        <h3>Give online</h3>
-        <p>Secure donation through PayPal. You can use a PayPal account or any debit or credit card.</p>
-        <a class="btn btn-primary" href="https://www.paypal.com/donate/?hosted_button_id=XYQ9FDTCNJNQG" target="_blank" rel="noopener">Donate with PayPal</a>
-      </div>
-    </div>
-  </section>
 
-  <section class="block" id="payments">
+  <section class="block" id="payments" style="border-bottom:0">
     <div class="wrap split">
       <div>
-        <h2>Make a payment</h2>
+        <h2>Choose how to pay</h2>
         <p class="lead">Pay team fees, tournament costs, and fundraiser tickets any way that works for you. Please include your player’s name and team in the note so we can credit your payment correctly.</p>
       </div>
       <ul class="ways">
@@ -172,24 +155,6 @@ button.btn-primary{background:var(--jersey)}
     </div>
   </section>
 
-  <section class="block" id="sponsors" style="border-bottom:0">
-    <div class="wrap">
-      <h2>Thank you to our sponsors</h2>
-      <p class="lead">Your giving makes this possible. Interested in sponsoring a team? Email <a href="mailto:Info@SharksNationBaseball.com?subject=Sponsorship">Info@SharksNationBaseball.com</a>.</p>
-      <ul class="sponsors">
-        <li><a href="https://www.kbconsultingservices.net/" target="_blank" rel="noopener">K&amp;B Consulting Services</a><span>St. Louis, MO</span></li>
-        <li><a href="https://www.farm-program.com/" target="_blank" rel="noopener">Fresh Hire 365</a><span>St. Louis, MO</span></li>
-        <li><a href="https://www.facebook.com/p/Heavenly-Hearts-Infant-Center-and-STEAM-Academy-100057187070440/" target="_blank" rel="noopener">Heavenly Hearts STEAM Academy</a><span>St. Louis, MO</span></li>
-        <li><a href="https://www.havenoflightcc.com/" target="_blank" rel="noopener">Haven of Light Christian Counseling</a><span>St. Louis, MO</span></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100069706921215" target="_blank" rel="noopener">Crystal’s Creamery</a><span>St. Louis, MO</span></li>
-        <li><a href="https://tritechamerica.com/" target="_blank" rel="noopener">Tri Tech Automation</a><span>Moscow Mills, MO</span></li>
-        <li><a href="https://www.rottler.com/" target="_blank" rel="noopener">Rottler Pest Solutions</a><span>St. Louis, MO</span></li>
-        <li><a href="https://www.facebook.com/p/MVG-Painting-Inc-100079487805972/" target="_blank" rel="noopener">MVG Painting</a><span>St. Louis, MO</span></li>
-        <li><a href="https://www.intren.com/" target="_blank" rel="noopener">INTREN, LLC</a><span>Union, IL</span></li>
-        <li><strong>Western Ready Mix</strong><span>Wentzville, MO</span></li>
-      </ul>
-    </div>
-  </section>
 </main>
 
 <footer class="site">
@@ -202,7 +167,6 @@ button.btn-primary{background:var(--jersey)}
   document.getElementById('yr').textContent = new Date().getFullYear();
   const t=document.querySelector('.menu-toggle'),m=document.getElementById('menu');
   t.addEventListener('click',()=>{const o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});
-  if (location.pathname.indexOf('/payments') === 0 && !location.hash) { requestAnimationFrame(()=>document.getElementById('payments').scrollIntoView()); }
 </script>
 <dialog id="zelle-dialog" aria-labelledby="zelle-title">
   <h3 id="zelle-title">Pay with Zelle</h3>
