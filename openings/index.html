@@ -50,8 +50,9 @@ nav a[aria-current]{border-bottom:2px solid var(--lime)}
 .jump a.jump-primary:hover{background:var(--lime)}
 h1{font:900 clamp(3rem,10vw,6.5rem)/.85 var(--display);text-transform:uppercase;margin:0}
 .page-head p{max-width:36rem;color:#d5e1ee;font-size:1.15rem;margin:1.25rem 0 1.75rem}
-.jump{display:flex;gap:.75rem;flex-wrap:wrap}
-.jump a{color:#fff;border:2px solid var(--lime);padding:.6rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:600}
+.jump{display:inline-grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:.75rem}
+@media (max-width:560px){.jump{display:grid;grid-auto-flow:row;width:100%}}
+.jump a{color:#fff;border:2px solid var(--lime);padding:.6rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:600;text-align:center;white-space:nowrap}
 .jump a:hover{background:var(--lime);border-color:var(--lime);color:var(--navy)}
 section.block{padding:4rem 0;border-bottom:1px solid var(--line)}
 h2{font:900 clamp(2.2rem,5vw,3.2rem)/.95 var(--display);text-transform:uppercase;margin:0 0 1rem}
@@ -129,6 +130,7 @@ table.ages td.empty{color:var(--line)}
 .coach-cta .btn-line:hover{background:var(--lime);border-color:var(--lime);color:var(--navy)}
 @media (max-width:760px){.coach-cta{grid-template-columns:1fr;padding:1.6rem 1.4rem}}
 .team-card.open a.badge:hover{background:#fff;border-color:#fff;color:var(--navy)}
+@media (max-width:1060px){.menu-toggle{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:64px;background:var(--deep);flex-direction:column;gap:0;padding:.5rem 1.25rem 1rem}nav ul.open{display:flex}nav li a{display:block;padding:.6rem 0}}
 </style>
 </head>
 <body>
@@ -145,6 +147,7 @@ table.ages td.empty{color:var(--line)}
         <li><a href="/#teams">Teams</a></li>
         <li><a href="/gallery/">Gallery</a></li>
         <li><a href="/openings/" aria-current="page">Openings</a></li>
+        <li><a href="/gear/">Uniforms &amp; Gear</a></li>
         <li><a href="/donate/">Donate</a></li>
         <li><a href="/payments/">Payments</a></li>
         <li><a href="/#contact">Contact</a></li>
@@ -223,11 +226,11 @@ table.ages td.empty{color:var(--line)}
       <div class="coach-cta" style="margin-top:3rem">
         <div>
           <span class="kick">For coaches</span>
-          <h3>Bring your team to Sharks Nation</h3>
+          <h3>Bring your team to the Midwest Sharks</h3>
           <p>If you’re a coach looking to bring your team over, reach out and let’s talk.</p>
         </div>
         <div class="acts">
-          <a class="btn btn-light" href="mailto:Info@SharksNationBaseball.com?subject=Bringing%20my%20team%20to%20Sharks%20Nation">Email us</a>
+          <a class="btn btn-light" href="mailto:Info@SharksNationBaseball.com?subject=Bringing%20my%20team%20to%20the%20Midwest%20Sharks">Email us</a>
           <a class="btn btn-line" href="tel:+13143028109">Call (314) 302-8109</a>
         </div>
       </div>
@@ -254,31 +257,6 @@ table.ages td.empty{color:var(--line)}
         <p class="result" id="result" aria-live="polite">Enter a birth date to see the age group.</p>
       </div>
 
-      <div class="table-scroll">
-        <table class="ages">
-          <caption>Midwest Sharks Age Chart</caption>
-          <thead><tr><th scope="col" style="text-align:left">Birth date</th><th scope="col">2027 season</th><th scope="col">2028 season</th><th scope="col">2029 season</th><th scope="col">2030 season</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">5/1/2025 – 4/30/2026</th><td class=empty>–</td><td class=empty>–</td><td class=empty>–</td><td>T-Ball</td></tr>
-            <tr><th scope="row">5/1/2024 – 4/30/2025</th><td class=empty>–</td><td class=empty>–</td><td>T-Ball</td><td>T-Ball</td></tr>
-            <tr><th scope="row">5/1/2023 – 4/30/2024</th><td class=empty>–</td><td>T-Ball</td><td>T-Ball</td><td>6U Machine Pitch</td></tr>
-            <tr><th scope="row">5/1/2022 – 4/30/2023</th><td>T-Ball</td><td>T-Ball</td><td>6U Machine Pitch</td><td>7U Machine Pitch</td></tr>
-            <tr><th scope="row">5/1/2021 – 4/30/2022</th><td>T-Ball</td><td>6U Machine Pitch</td><td>7U Machine Pitch</td><td>8U</td></tr>
-            <tr><th scope="row">5/1/2020 – 4/30/2021</th><td>6U Machine Pitch</td><td>7U Machine Pitch</td><td>8U</td><td>9U</td></tr>
-            <tr><th scope="row">5/1/2019 – 4/30/2020</th><td>7U Machine Pitch</td><td>8U</td><td>9U</td><td>10U</td></tr>
-            <tr><th scope="row">5/1/2018 – 4/30/2019</th><td>8U</td><td>9U</td><td>10U</td><td>11U</td></tr>
-            <tr><th scope="row">5/1/2017 – 4/30/2018</th><td>9U</td><td>10U</td><td>11U</td><td>12U</td></tr>
-            <tr><th scope="row">5/1/2016 – 4/30/2017</th><td>10U</td><td>11U</td><td>12U</td><td>13U</td></tr>
-            <tr><th scope="row">5/1/2015 – 4/30/2016</th><td>11U</td><td>12U</td><td>13U</td><td>14U</td></tr>
-            <tr><th scope="row">5/1/2014 – 4/30/2015</th><td>12U</td><td>13U</td><td>14U</td><td>15U</td></tr>
-            <tr><th scope="row">5/1/2013 – 4/30/2014</th><td>13U</td><td>14U</td><td>15U</td><td>16U</td></tr>
-            <tr><th scope="row">5/1/2012 – 4/30/2013</th><td>14U</td><td>15U</td><td>16U</td><td>17U</td></tr>
-            <tr><th scope="row">5/1/2011 – 4/30/2012</th><td>15U</td><td>16U</td><td>17U</td><td class=empty>–</td></tr>
-            <tr><th scope="row">5/1/2010 – 4/30/2011</th><td>16U</td><td>17U</td><td class=empty>–</td><td class=empty>–</td></tr>
-            <tr><th scope="row">5/1/2009 – 4/30/2010</th><td>17U</td><td class=empty>–</td><td class=empty>–</td><td class=empty>–</td></tr>
-          </tbody>
-        </table>
-      </div>
       <p class="chart-actions"><a class="btn btn-outline" href="/assets/age-chart-2027-2030.png" target="_blank" rel="noopener">Open the printable age chart</a></p>
     </div>
   </section>
