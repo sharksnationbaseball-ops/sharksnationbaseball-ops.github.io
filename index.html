@@ -81,13 +81,13 @@ nav a:hover{opacity:1}
 }
 .hero .wrap{padding-top:4.5rem;padding-bottom:4rem;position:relative}
 .hero h1{font:900 clamp(3.6rem,13vw,10rem)/.82 var(--display);margin:0;text-transform:uppercase;letter-spacing:-.01em}
-.hero h1 span{display:block;color:transparent;-webkit-text-stroke:2px var(--steel)}
+.hero h1 span{display:block;margin-top:.12em;color:transparent;-webkit-text-stroke:2px var(--steel)}
 .hero p.lede{max-width:34rem;font-size:1.2rem;color:#d5e1ee;margin:1.75rem 0 2rem}
 .hero .cta{display:flex;gap:.75rem;flex-wrap:wrap}
 .hero-grid{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
 .hero-logo{width:clamp(160px,17vw,220px);height:auto;align-self:end;margin-bottom:-1rem;filter:drop-shadow(0 12px 28px rgba(0,0,0,.45))}
 .hero-photo-m{display:none}
-@media (max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-logo{position:absolute;top:1.6rem;right:.5rem;width:20vw;max-width:102px;margin:0;opacity:.2;filter:none;z-index:0;pointer-events:none}}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-logo{position:absolute;top:calc(2rem + max(3.6rem,13vw)*.88 - min(20vw,102px)/2 + 4px);right:.5rem;width:20vw;max-width:102px;margin:0;opacity:.2;filter:none;z-index:0;pointer-events:none}}
 .facts{background:var(--deep);color:#d5e1ee}
 .facts .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2.5rem;padding-top:1rem;padding-bottom:1rem;font-size:.95rem}
 .facts strong{color:#fff}
@@ -397,7 +397,7 @@ footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:
           if(j.success){ f.reset(); st.className='form-status ok'; st.textContent='Thanks! Your message was sent. We’ll get back to you soon.'; }
           else { throw new Error(j.message||'failed'); }
         })
-        .catch(function(){ st.className='form-status err'; st.textContent='Sorry, something went wrong. Please call (314) 302-8109 or email Info@SharksNationBaseball.com.'; })
+        .catch(function(err){ st.className='form-status err'; st.textContent='Sorry, the message didn’t go through'+(err&&err.message&&err.message!=='failed'?' ('+err.message+')':'')+'. Please call (314) 302-8109 or email Info@SharksNationBaseball.com.'; })
         .then(function(){ btn.disabled=false; btn.textContent='Send message'; });
     });
   })();

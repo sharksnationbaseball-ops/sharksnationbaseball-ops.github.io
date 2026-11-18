@@ -93,7 +93,7 @@ button.btn-primary{background:var(--jersey)}
 .team-page-link{align-self:flex-start;margin-top:.75rem;font-weight:600;font-size:.9rem;color:#fff;background:var(--jersey);border:2px solid var(--lime);border-radius:999px;padding:.4rem .95rem;text-decoration:none}
 .team-page-link:hover{background:var(--lime);color:var(--navy)}
 .badge{align-self:flex-start;margin-top:.5rem;font-weight:600;font-size:.85rem;padding:.3rem .65rem;border-radius:999px;border:1.5px solid var(--line);color:var(--muted)}
-.team-card.open .badge{background:var(--lime);border-color:var(--lime);color:var(--navy)}
+.team-card.open .badge{text-decoration:none;cursor:pointer;background:var(--lime);border-color:var(--lime);color:var(--navy)}
 .claim{margin-top:2rem;display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}
 .finder{background:var(--surface);border:2px solid var(--steel);border-radius:6px;padding:1.5rem;max-width:44rem;margin-bottom:2.5rem}
 :root[data-theme="dark"] .finder{border-color:var(--steel)}
@@ -128,6 +128,7 @@ table.ages td.empty{color:var(--line)}
 .coach-cta .btn-line{border-color:#fff;color:#fff}
 .coach-cta .btn-line:hover{background:var(--lime);border-color:var(--lime);color:var(--navy)}
 @media (max-width:760px){.coach-cta{grid-template-columns:1fr;padding:1.6rem 1.4rem}}
+.team-card.open a.badge:hover{background:#fff;border-color:#fff;color:var(--navy)}
 </style>
 </head>
 <body>
@@ -175,7 +176,7 @@ table.ages td.empty{color:var(--line)}
           <span class="age">T-Ball</span>
           <span class="name">Midwest Sharks T-Ball</span>
           <span class="coach">Head coach: Coach Baranovic</span>
-          <span class="badge">1–2 openings</span>
+          <a class="badge" href="https://docs.google.com/forms/d/1YDR2mKbftRF-oV8qcJxj4oxnRXw0gxy0ZL4y8qtguT0/viewform" target="_blank" rel="noopener" title="Fill out the Player Inquiry Form">1–2 openings →</a>
         </li>
         <li class="team-card">
           <span class="age">7U</span>
@@ -187,7 +188,7 @@ table.ages td.empty{color:var(--line)}
           <span class="age">8U</span>
           <span class="name">Midwest Sharks 8U</span>
           <span class="coach">Head coach: Coach Henderson</span>
-          <span class="badge">1–2 openings</span>
+          <a class="badge" href="https://docs.google.com/forms/d/1YDR2mKbftRF-oV8qcJxj4oxnRXw0gxy0ZL4y8qtguT0/viewform" target="_blank" rel="noopener" title="Fill out the Player Inquiry Form">1–2 openings →</a>
         </li>
         <li class="team-card">
           <span class="age">9U</span>
