@@ -140,6 +140,16 @@ button.btn-primary{background:var(--jersey)}
 .pos-key{margin:-.5rem 0 1.25rem;color:var(--muted);font-size:.9rem}
 .roster li{font-size:1.5rem}
 .roster .num{display:block;font:900 1.15rem/1 var(--display);color:var(--lime);margin-bottom:.3rem;letter-spacing:.02em}
+.gc-follow{display:inline-block;margin-top:1.4rem;background:var(--jersey);color:#fff;border:2px solid var(--lime);border-radius:6px;padding:.8rem 1.3rem;font-weight:600;text-decoration:none}
+.gc-follow:hover{background:var(--lime);color:var(--navy)}
+@media (max-width:560px){.gc-follow{display:block;text-align:center}}
+.league-card{display:grid;grid-template-columns:1fr auto;gap:1rem 2rem;align-items:center;background:var(--surface);border:2px solid var(--steel);border-left:6px solid var(--lime);border-radius:8px;padding:1.4rem 1.6rem}
+.league-kick{display:block;font:700 .85rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin-bottom:.25rem}
+.league-card h3{margin:0 0 .4rem;font-size:1.8rem}
+.league-card p{margin:0;color:var(--muted);max-width:40rem}
+.league-card a{font-weight:600}
+.soon{font-weight:600;font-size:.9rem;border:2px dashed var(--steel);border-radius:999px;padding:.45rem 1rem;color:var(--ink);white-space:nowrap}
+@media (max-width:620px){.league-card{grid-template-columns:1fr}.soon{justify-self:start}}
 </style>
 <meta name="robots" content="noindex">
 </head>
@@ -173,6 +183,7 @@ button.btn-primary{background:var(--jersey)}
       <h1>9U <span>Moton</span></h1>
       <p>Head Coach Terrell Moton and staff. Roster, coaches, and upcoming team events, all in one place.</p>
       <div class="team-stats"><span>13 players</span><span>4 coaches</span><span>St. Louis area</span></div>
+      <a class="gc-follow" href="https://web.gc.com/teams/SO7pKgpkKabU/live/?pid=team_share_link&amp;c=team_share_link" target="_blank" rel="noopener">Follow Midwest Sharks 9U on GameChanger →</a>
     </div>
   </div>
 
@@ -212,6 +223,20 @@ button.btn-primary{background:var(--jersey)}
   </section>
 
 
+
+  <section class="block" id="league" style="padding-top:0;border-bottom:0">
+    <div class="wrap">
+      <h2>2027 League</h2>
+      <div class="league-card">
+        <div>
+          <span class="league-kick">Chesterfield Select</span>
+          <h3>Silver Division</h3>
+          <p>Our 2027 league schedule is coming soon. Follow the team on <a href="https://web.gc.com/teams/SO7pKgpkKabU/live/?pid=team_share_link&amp;c=team_share_link" target="_blank" rel="noopener">GameChanger</a> to get the schedule, scores, and updates as soon as they’re posted.</p>
+        </div>
+        <span class="soon">Schedule coming soon</span>
+      </div>
+    </div>
+  </section>
 
   <section class="block bgsec" id="events" style="padding-top:3.5rem;border-bottom:0">
     <div class="wrap">
