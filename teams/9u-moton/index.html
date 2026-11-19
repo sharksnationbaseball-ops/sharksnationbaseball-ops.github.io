@@ -138,6 +138,8 @@ button.btn-primary{background:var(--jersey)}
 .roster .pname{display:block}
 .roster .pos{display:block;margin-top:.35rem;font:600 .8rem/1.2 var(--body);letter-spacing:.06em;color:var(--muted);text-transform:none}
 .pos-key{margin:-.5rem 0 1.25rem;color:var(--muted);font-size:.9rem}
+.roster li{font-size:1.5rem}
+.roster .num{display:block;font:900 1.15rem/1 var(--display);color:var(--lime);margin-bottom:.3rem;letter-spacing:.02em}
 </style>
 <meta name="robots" content="noindex">
 </head>
@@ -192,19 +194,19 @@ button.btn-primary{background:var(--jersey)}
       <h2>Roster</h2>
       <p class="pos-key">P pitcher · C catcher · 1B/2B/3B first, second, third base · MI middle infield · OF outfield · UTIL utility</p>
       <ul class="roster">
-        <li><span class="pname">Korey J</span><span class="pos">3B · 1B · P</span></li>
-        <li><span class="pname">Kashten M</span><span class="pos">MI · OF</span></li>
-        <li><span class="pname">Knox K</span><span class="pos">2B · OF</span></li>
-        <li><span class="pname">Mason L</span><span class="pos">P · UTIL</span></li>
-        <li><span class="pname">Levi W</span><span class="pos">OF · 2B</span></li>
-        <li><span class="pname">Carter T</span><span class="pos">C · 1B · P</span></li>
-        <li><span class="pname">Lucas B</span><span class="pos">UTIL · C · P</span></li>
-        <li><span class="pname">Karson L</span><span class="pos">MI · OF · P</span></li>
-        <li><span class="pname">Jordan G</span><span class="pos">MI</span></li>
-        <li><span class="pname">Zachary M</span><span class="pos">OF · C</span></li>
-        <li><span class="pname">DeAris W</span><span class="pos">C · OF</span></li>
-        <li><span class="pname">Derek W</span><span class="pos">1B · 3B · P</span></li>
-        <li><span class="pname">Houston S</span><span class="pos">OF · 1B</span></li>
+        <li><span class="num">#1</span><span class="pname">Korey J</span><span class="pos">3B · 1B · P</span></li>
+        <li><span class="num">#4</span><span class="pname">Kashten M</span><span class="pos">MI · OF</span></li>
+        <li><span class="num">#5</span><span class="pname">Houston S</span><span class="pos">OF · 1B</span></li>
+        <li><span class="num">#7</span><span class="pname">Knox K</span><span class="pos">2B · OF</span></li>
+        <li><span class="num">#8</span><span class="pname">Mason L</span><span class="pos">P · UTIL</span></li>
+        <li><span class="num">#9</span><span class="pname">Levi W</span><span class="pos">OF · 2B</span></li>
+        <li><span class="num">#10</span><span class="pname">Carter T</span><span class="pos">C · 1B · P</span></li>
+        <li><span class="num">#11</span><span class="pname">Lucas B</span><span class="pos">UTIL · C · P</span></li>
+        <li><span class="num">#12</span><span class="pname">Karson L</span><span class="pos">MI · OF · P</span></li>
+        <li><span class="num">#22</span><span class="pname">Jordan G</span><span class="pos">MI</span></li>
+        <li><span class="num">#28</span><span class="pname">Zachary M</span><span class="pos">OF · C</span></li>
+        <li><span class="num">#30</span><span class="pname">DeAris W</span><span class="pos">C · OF</span></li>
+        <li><span class="num">#92</span><span class="pname">Derek W</span><span class="pos">1B · 3B · P</span></li>
       </ul>
     </div>
   </section>
@@ -248,8 +250,9 @@ button.btn-primary{background:var(--jersey)}
     <div class="wrap">
       <h2>Team photos</h2>
       <div class="gallery mini" id="gallery">
+        <button type="button" data-full="photos/championship-rings.webp" aria-label="Open photo: The 9U Sharks and their coaches showing off their championship rings"><img src="photos/championship-rings-sm.webp" alt="The 9U Sharks and their coaches showing off their championship rings" width="600" height="436" loading="lazy"></button>
         <button type="button" data-full="photos/gmb-finalist.webp" aria-label="Open photo: The 9U Sharks holding their GMB tournament finalist banner with their coaches"><img src="photos/gmb-finalist-sm.webp" alt="The 9U Sharks holding their GMB tournament finalist banner with their coaches" width="600" height="447" loading="lazy"></button>
-        <button type="button" data-full="photos/team-gray-uniforms.webp" aria-label="Open photo: A Sharks team in gray uniforms with their three coaches"><img src="photos/team-gray-uniforms-sm.webp" alt="A Sharks team in gray uniforms with their three coaches" width="600" height="409" loading="lazy"></button>
+        <button type="button" data-full="photos/coaches-huddle.webp" aria-label="Open photo: The 9U Sharks kneeling in a huddle with their coaches on the field"><img src="photos/coaches-huddle-sm.webp" alt="The 9U Sharks kneeling in a huddle with their coaches on the field" width="600" height="578" loading="lazy"></button>
         <button type="button" data-full="photos/halloween-sugar-skull.webp" aria-label="Open photo: Sharks players in costumes relaxing on hay bales in front of a glowing sugar skull"><img src="photos/halloween-sugar-skull-sm.webp" alt="Sharks players in costumes relaxing on hay bales in front of a glowing sugar skull" width="600" height="450" loading="lazy"></button>
         <button type="button" data-full="photos/halloween-skeletons.webp" aria-label="Open photo: Sharks players goofing around in Halloween costumes by giant skeletons"><img src="photos/halloween-skeletons-sm.webp" alt="Sharks players goofing around in Halloween costumes by giant skeletons" width="450" height="600" loading="lazy"></button>
         <button type="button" data-full="photos/pizza-night.webp" aria-label="Open photo: Sharks players sharing pizza together at a team night out"><img src="photos/pizza-night-sm.webp" alt="Sharks players sharing pizza together at a team night out" width="450" height="600" loading="lazy"></button>
