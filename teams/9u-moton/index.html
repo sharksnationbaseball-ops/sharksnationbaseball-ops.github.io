@@ -150,6 +150,21 @@ button.btn-primary{background:var(--jersey)}
 .league-card a{font-weight:600}
 .soon{font-weight:600;font-size:.9rem;border:2px dashed var(--steel);border-radius:999px;padding:.45rem 1rem;color:var(--ink);white-space:nowrap}
 @media (max-width:620px){.league-card{grid-template-columns:1fr}.soon{justify-self:start}}
+
+/* ===== Modern colored buttons (matches the "Learn More" style) ===== */
+.btn-primary,.btn.primary,.jump a.jump-primary,.lineup .team-link,.team-page-link,.gc-follow{
+  background:linear-gradient(135deg,#37b5db 0%,#0b86c4 55%,#0077a9 100%);
+  color:#fff;border:2px solid transparent;border-radius:6px;
+  box-shadow:0 4px 14px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.18);
+  transition:filter .15s ease,transform .15s ease,box-shadow .15s ease;letter-spacing:.01em}
+.btn-primary:hover,.btn.primary:hover,.jump a.jump-primary:hover,.lineup .team-link:hover,.team-page-link:hover,.gc-follow:hover{
+  background:linear-gradient(135deg,#37b5db 0%,#0b86c4 55%,#0077a9 100%);
+  color:#fff;border-color:transparent;filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.32)}
+.btn-primary:active,.btn.primary:active,.lineup .team-link:active,.team-page-link:active,.gc-follow:active{transform:none;filter:brightness(.95)}
+@media (prefers-reduced-motion: reduce){.btn-primary,.btn.primary,.lineup .team-link,.team-page-link,.gc-follow{transition:none}}
+.gc-follow{display:inline-flex;align-items:center;gap:.7rem;padding:.6rem 1.2rem .6rem .6rem}
+.gc-follow img{width:34px;height:34px;border-radius:8px;display:block;flex-shrink:0}
+@media (max-width:560px){.gc-follow{display:flex;justify-content:center}}
 </style>
 <meta name="robots" content="noindex">
 </head>
@@ -183,7 +198,7 @@ button.btn-primary{background:var(--jersey)}
       <h1>9U <span>Moton</span></h1>
       <p>Head Coach Terrell Moton and staff. Roster, coaches, and upcoming team events, all in one place.</p>
       <div class="team-stats"><span>13 players</span><span>4 coaches</span><span>St. Louis area</span></div>
-      <a class="gc-follow" href="https://web.gc.com/teams/SO7pKgpkKabU/live/?pid=team_share_link&amp;c=team_share_link" target="_blank" rel="noopener">Follow Midwest Sharks 9U on GameChanger →</a>
+      <a class="gc-follow" href="https://web.gc.com/teams/SO7pKgpkKabU/live/?pid=team_share_link&amp;c=team_share_link" target="_blank" rel="noopener"><img src="data:image/webp;base64,UklGRhgFAABXRUJQVlA4IAwFAACwHQCdASpAAEAAPjEUiUKiISEXCk44IAMEtgBOnKC/AOLEjP3f8d/xg+Wiqv2X8QfjN0Up0a9P+A9mf3VeoX/et0B/Iv6r/p/6177fo5/2/qAfy7+9dY96AHllftF8IH7afsZ7MV0F5Wf2cyfn2X5gNQh/W/yWyyz6f/h9GK44uNX/gemV/n/2Xz+/QP/M9wT+Wf1H/XfbH8wHrE9CX9ciE/70AjNteGdOpntR/Y3QUbpPczRWRuX01cxujzozGVDk87NNqdbSqF+ilju3ljyJlwj/7uK/KPHx2EWJIH98YBd8316KGfLTeEv/UTomovoRbaYNfLAA/v/5SaS07EGD5RC8DfgewTE3Ss4PfLEZKghe2W1c5vKSTZcHAwali8c3puMc0kWBuIWZ9+LNF6sVWgQHNpbrUYsGSvetZ1dypdAyw6aeIO4PV8V2cOKfPB6Qp/OfFs6gCPkUifKLK4YuN0gTMCRtmUbt14SpRv9efRg8JL2BS2QUDyUr2/ddtIqVG3+M5nyEzhI0BDWIcf4vO2p4rdk60/mxPyG3J7c0QMjJmOUkjHySYTeoeCaPFWv8o0aDMc1LeVMZxuIsOBvcOJkfeuqPLEzfnAV1Gxu/jzH92ULoRxH0I1UeAp/cTL2dMFpluYZ7lPPc9vmP+m/+PwF9GRiePY88hJDkWds7ZX5XP0c3fOrCZvnJx6f18Lho9eVa4Thtk4denWV7cRYAy2cq50or6sKguE/JVC4m542DULRkJUkWnyZ9Zf1wprPfGrVzoHvkjx3I3Q3I7+esCFUNhK+gOg+2hHNOd/ykMA04solpDlrm4n10bXI0cS9z939Y3tqhbhUue/YjmJJP/VK3ry4zVbeLCajsnsZ+sUXDD1YLvETmahd9+P4X7VsV6j6cmiak+0ZB3RrYx9JL1US9K5X1epFULAhd/ga4BHcW4JId1wWqigOTEG4e/vOf3om+LkrVvTHIR15FqghXit8d8db/C9VHtTl/EjsCj0+kSUIilv9IwyNlHeLQ3TVDX8cF/A4ouZxkxacVqslH6KQbO4JPE/Hlgeu385UZbIBpAlq3CSks1eGJPGNpWY2pK4nMMz5PksFWUsOI2tUekv5YKpBYwm9P2fxYMupWZhSxRKXzIxt4Z0mIfL2kwGs4uoYLj/QhxvH3DvtqSt0aJqMKWt9+KeQAIfnu+pNPF0EOIhHwGo2ZTwg3vIW2GcmlvZqC/YvfTMUwvVcPsSoFm797aio/MNdJsLCO5FHpO9ciPwKdKoroApeWjHzVmf6dLKJLq+6iqRJlmByz3NBt8peDKz4fRB0tZbB7fa4lb3m33eRUZ36jA5I/WhHOjktRxujXYTeyiX0/kj4ft6xrp0qdFTECAlw6+4KzfdVZgjf/aEf9Tn29WZDOmn1ZzezjAfq/1DXog8wz7nXl4jtym9rypweaQslAbgLjjW3+Oi8iCeuOlXFB8PPvL+b90/MG1fWaY361O8Q5/i+TCHtRGsF/1iGjFjBD/sBN+/8uT0sSCDE6+fsyt+yIAOYLWpiWkWgbHcWRcf4g0r/z/Ug7UHoYoUL1zD8KZfEU0qZSHhtj5iO6LhdoeVFO2rjWzXJn47WMeqNdPbWQapFIx3P5+bB9t1SvX4A+XJ9Dzyies3TGDYFAjhIk/VGfM+xMa/zlmJKPLH5QOJgH/bNv7Kf494GhwiKKXbqBT7oJpJ1U2bk6uu3cc6f3gJUgAA==" alt="" width="34" height="34">Follow Midwest Sharks 9U on GameChanger</a>
     </div>
   </div>
 

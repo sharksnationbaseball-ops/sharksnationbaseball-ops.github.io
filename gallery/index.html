@@ -98,6 +98,21 @@ button.btn-primary{background:var(--jersey)}
 .lb .count{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 1rem);left:0;right:0;text-align:center;color:#a9bbd0;font-size:.95rem}
 @media (max-width:600px){.lb .prev,.lb .next{top:auto;bottom:calc(env(safe-area-inset-bottom,0px) + .5rem);transform:none}.lb .count{bottom:calc(env(safe-area-inset-bottom,0px) + 1.4rem)}}
 @media (max-width:1060px){.menu-toggle{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:64px;background:var(--deep);flex-direction:column;gap:0;padding:.5rem 1.25rem 1rem}nav ul.open{display:flex}nav li a{display:block;padding:.6rem 0}}
+
+/* ===== Modern colored buttons (matches the "Learn More" style) ===== */
+.btn-primary,.btn.primary,.jump a.jump-primary,.lineup .team-link,.team-page-link,.gc-follow{
+  background:linear-gradient(135deg,#37b5db 0%,#0b86c4 55%,#0077a9 100%);
+  color:#fff;border:2px solid transparent;border-radius:6px;
+  box-shadow:0 4px 14px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.18);
+  transition:filter .15s ease,transform .15s ease,box-shadow .15s ease;letter-spacing:.01em}
+.btn-primary:hover,.btn.primary:hover,.jump a.jump-primary:hover,.lineup .team-link:hover,.team-page-link:hover,.gc-follow:hover{
+  background:linear-gradient(135deg,#37b5db 0%,#0b86c4 55%,#0077a9 100%);
+  color:#fff;border-color:transparent;filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.32)}
+.btn-primary:active,.btn.primary:active,.lineup .team-link:active,.team-page-link:active,.gc-follow:active{transform:none;filter:brightness(.95)}
+@media (prefers-reduced-motion: reduce){.btn-primary,.btn.primary,.lineup .team-link,.team-page-link,.gc-follow{transition:none}}
+.gc-follow{display:inline-flex;align-items:center;gap:.7rem;padding:.6rem 1.2rem .6rem .6rem}
+.gc-follow img{width:34px;height:34px;border-radius:8px;display:block;flex-shrink:0}
+@media (max-width:560px){.gc-follow{display:flex;justify-content:center}}
 </style>
 </head>
 <body>

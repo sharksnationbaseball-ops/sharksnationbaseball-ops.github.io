@@ -196,6 +196,21 @@ footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:
 .gold-grid .gloc{font-size:.85rem;opacity:.75}
 @media (min-width:900px){.gold-grid.four{grid-template-columns:repeat(4,1fr)}}
 @media (prefers-reduced-motion: reduce){.gold-grid .logo-box{transition:none}}
+
+/* ===== Modern colored buttons (matches the "Learn More" style) ===== */
+.btn-primary,.btn.primary,.jump a.jump-primary,.lineup .team-link,.team-page-link,.gc-follow{
+  background:linear-gradient(135deg,#37b5db 0%,#0b86c4 55%,#0077a9 100%);
+  color:#fff;border:2px solid transparent;border-radius:6px;
+  box-shadow:0 4px 14px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.18);
+  transition:filter .15s ease,transform .15s ease,box-shadow .15s ease;letter-spacing:.01em}
+.btn-primary:hover,.btn.primary:hover,.jump a.jump-primary:hover,.lineup .team-link:hover,.team-page-link:hover,.gc-follow:hover{
+  background:linear-gradient(135deg,#37b5db 0%,#0b86c4 55%,#0077a9 100%);
+  color:#fff;border-color:transparent;filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.32)}
+.btn-primary:active,.btn.primary:active,.lineup .team-link:active,.team-page-link:active,.gc-follow:active{transform:none;filter:brightness(.95)}
+@media (prefers-reduced-motion: reduce){.btn-primary,.btn.primary,.lineup .team-link,.team-page-link,.gc-follow{transition:none}}
+.gc-follow{display:inline-flex;align-items:center;gap:.7rem;padding:.6rem 1.2rem .6rem .6rem}
+.gc-follow img{width:34px;height:34px;border-radius:8px;display:block;flex-shrink:0}
+@media (max-width:560px){.gc-follow{display:flex;justify-content:center}}
 </style>
 </head>
 <body>
@@ -275,7 +290,7 @@ footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:
             <tr><td class="age">T-Ball</td><td class="coach">Coach Baranovic</td></tr>
             <tr><td class="age">7U</td><td class="coach">Coach Carter</td></tr>
             <tr><td class="age">8U</td><td class="coach">Coach Henderson</td></tr>
-            <tr><td class="age">9U</td><td class="coach"><span class="coach-row">Coach Moton <a class="team-link" href="/teams/9u-moton/" aria-label="9U Moton team page"><span>Team</span> <span>page →</span></a></span></td></tr>
+            <tr><td class="age">9U</td><td class="coach"><span class="coach-row">Coach Moton <a class="team-link" href="/teams/9u-moton/" aria-label="9U Moton team page"><span>Team</span> <span>page</span></a></span></td></tr>
             <tr><td class="age">10U</td><td class="coach">Coach Murphy</td></tr>
             <tr><td class="age">13U</td><td class="coach">Coach Hamilton</td></tr>
             <tr><td class="age">15U</td><td class="coach">Coach Reed</td></tr>
